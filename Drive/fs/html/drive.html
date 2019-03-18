@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+    text-align: left;
+      padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+form {
+  display: inline-block;
+}
+</style>
+
+<title>Drive</title>
+</head>
+
+<body>
+  <center>
+    <h2>Drive</h2><br>
+    <h4>$uname</h4>
+    <p>
+    </p>
+  </center>
+
+  <center>
+  <h5>Current Directory: $DIRNAME</h5>
+  <form method="post">
+  Directory Name: <input type="text" name="dirname">  <input type="submit" value="New" formaction="/newdir"> <input type="submit" value="Rename" formaction="/renamedir">
+  </form>
+  
+  <br>
+  <form method="post" enctype="multipart/form-data" action="uploadfile">
+    <input type="file" name="userfile">
+    <input type="submit" value="Upload">
+  </form>
+  </br>
+  </center>
+  <table>
+    <tr>
+      <th>Download:</th> 
+      <th>Delete:</th> 
+      <th>Filename:</th>
+      <th>Size (in bytes): </th>
+    </tr>
+    $DRIVEFILE
+  </table>
+  <table>
+    <tr>
+      <th>Delete:</th> 
+      <th>Directory:</th>      
+    </tr>
+    $DRIVEDIR
+  </table>
+
+  <p>
+  <center>
+    <form action="home">
+      <input type="submit" value="Go Home">
+    </form>
+  
+<!--  <script>
+  function getCheckedBoxes() {
+  var checkboxes = document.getElementsByName("delete");
+  var checkboxesChecked = [];
+  // loop over them all
+  for (var i=0; i<checkboxes.length; i++) {
+     // And stick the checked ones onto an array...
+     if (checkboxes[i].checked) {
+        checkboxesChecked.push(checkboxes[i]);
+     }
+  }
+  checkboxesChecked.submit();
+}
+
+  
+  </script> -->
+  
+  
+</body
+</html>

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message RepPacket{
+	optional string command = 1 [default = ""];
+	optional string request = 2 [default = ""];
+	optional string row = 3 [default = ""];
+	optional string column = 4 [default = ""];
+	optional string data = 5 [default = ""];
+	optional string data_to_compare = 6 [default = ""];
+	optional string msgid = 7 [default = ""];
+	optional int32 proposed_number = 8 [default = 0];
+	optional int32 version_number = 9 [default = 0];
+	optional int32 deliverable = 10 [default = 0];
+	optional int32 senderid = 11 [default = 0];
+	optional string sender = 12 [default = ""];
+}

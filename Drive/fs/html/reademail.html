@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+.container {
+  width: 500px;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}
+
+body {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+}
+
+</style>
+
+  <title> Message $NUM</title>
+</head>
+
+<body>
+  <p>
+        <center>
+  
+    <h2>Message</h2>
+          </center>
+    
+  </p>
+  <p>
+  
+  <div class="container">
+  
+    From: <input type="text" name="to" disabled value="$FROM"><br>
+    Subject: <input type="text" name="subj" disabled value="$SUBJ"><br>
+    
+    Message:<br>
+    <textarea name="message" cols="100" rows="20" disabled >$MSG</textarea>
+    <br><br>
+  <form method="post" action="replyemail">
+   <input type="hidden" value="$NUM" name="replyinput"/>
+    <input type="submit" value="Reply">
+  </form>
+   <form method="post" action="fwdemail">
+      <input type="hidden" value="$NUM" name="fwdinput"/>
+    <input type="submit" value="Forward">
+  </form>
+          <br><br>
+  
+    
+     <form action="inbox">
+    <input type="submit" value="Back to Inbox">
+  </form>
+  </div>
+
+  </p>
+</body>
+</html>

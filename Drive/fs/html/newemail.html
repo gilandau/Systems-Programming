@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+.container {
+  width: 500px;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}
+
+body {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+}
+
+</style>
+
+  <title>New Message</title>
+</head>
+
+<body>
+  <p>
+    <h2>Compose New Message</h2>
+  </p>
+  <p>
+  <div class="container">
+  <form method="post" action="sendemail">
+    To: <input type="text" name="to" value = "$TO" ><br>
+    Subject: <input type="text" name="subj" value = "$SUBJ"><br>
+    Message:<br>
+    <textarea name="message" cols="100" rows="20">$MSG</textarea>
+    <br><br>
+    <input type="submit" value="Send Message">
+  </form>
+  
+    <br><br>
+  
+    
+     <form action="inbox">
+    <input type="submit" value="Back to Inbox">
+  </form>
+  </div>
+
+  </p>
+</body>
+</html>

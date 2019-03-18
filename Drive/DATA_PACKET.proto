@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message Packet
+{
+	optional string row = 1 [default = ""];
+	optional string column = 2 [default = ""];
+	optional string command = 3 [default = ""];
+	optional bytes data = 4 [default = ""];
+	optional string status = 5 [default = ""];
+	optional string status_code = 6 [default = ""];
+	repeated string arg = 7;
+	optional string sender = 8 [default = ""];
+	optional string receiver = 9 [default = ""];
+	repeated bytes drivedata = 10;
+}

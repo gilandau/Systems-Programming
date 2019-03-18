@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+    text-align: left;
+      padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+form {
+  display: inline-block;
+}
+</style>
+
+<title>Inbox</title>
+</head>
+
+<body>
+  <center>
+    <h2>Inbox</h2><br>
+    <h4>$uname</h4>
+    <p>
+    <form action="newemail">
+      <input type="submit" value="Compose New Message">
+    </form>
+    </p>
+    <!-- Here, you can place the user's name -->
+  </center>
+
+  <table>
+    <tr>
+      <th>Read:</th>    
+      <th>Delete:</th>    
+      <th>From:</th>
+      <th>Subject:</th>
+      <th>Date:</th>
+    </tr>
+    <!-- Here, you'll iterate over each email you have and create little rows
+      like this: (note: there will be a next/prev button that the user can click
+    on and you'll load this piece differently. it'll justbe a post call to get
+    the next page (autoload the first page)-->
+    <th> $INBOX </th>
+ <!--     <th><input type="button" name="read"></th>
+      <th><input type="checkbox" name="delete">     </button></th>
+      <th>carter@pennapps.local</th>
+      <th>Hey!</th>
+      <th>November 16th sometime after midnight</th> -->
+  </table>
+
+  <center>
+    
+  
+<!--  <script>
+  function getCheckedBoxes() {
+  var checkboxes = document.getElementsByName("delete");
+  var checkboxesChecked = [];
+  // loop over them all
+  for (var i=0; i<checkboxes.length; i++) {
+     // And stick the checked ones onto an array...
+     if (checkboxes[i].checked) {
+        checkboxesChecked.push(checkboxes[i]);
+     }
+  }
+  checkboxesChecked.submit();
+}
+
+  
+  </script> -->
+    <form action="home">
+      <input type="submit" value="Go Home">
+    </form>
+  
+  
+</body
+</html>

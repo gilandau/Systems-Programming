@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message Queuepacket{
+	optional string command = 1 [default = ""];
+	optional string row = 2 [default = ""];
+	optional string column = 3 [default = ""];
+	optional string data = 4 [default = ""];
+	optional string data_to_compare = 5 [default = ""];
+	optional string msgid = 6 [default = ""];
+	optional int32 version_number = 7 [default = 0];
+	optional int32 sender_socket = 8 [default = 0];
+}

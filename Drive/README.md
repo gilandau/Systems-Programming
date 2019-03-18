@@ -11,3 +11,7 @@ Features include:
 4) User Creation (including "Admin" accounts)
 
 5) Dynamic Server Status Updates (including killing and restarting servers)
+
+6) Big Table implementation to store data
+
+7) Dynamic load balancing
